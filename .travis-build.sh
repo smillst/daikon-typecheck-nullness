@@ -11,7 +11,7 @@ set -e
 export CHECKERFRAMEWORK=$ROOT/checker-framework
 
 ## Obtain daikon
-(cd $ROOT && git clone --depth 1 -b smillst-master https://github.com/smillst/daikon.git)
+(cd $ROOT && git clone --depth 1 -b cfBugs https://github.com/smillst/daikon.git)
 make -C $ROOT/daikon/java compile dyncomp-jdk
 make -C $ROOT/daikon daikon.jar
 
